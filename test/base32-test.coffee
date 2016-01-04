@@ -32,13 +32,6 @@ suite = suite.addBatch
     'it decodes correctly': (topic) ->
       assert.equal topic.original, base32.decode(topic.encoded)
 
-  'When using the built-in hasher':
-    topic: ->
-      hash = base32.sha1(teststring)
-
-    'it produces the same value': (topic) ->
-      assert.equal topic, '1wwn60g9bv8n5g8n72udmk7yqm80dvtu'
-
   'When streaming a string to encode':
     topic: ->
       enc = new base32.Encoder
@@ -56,21 +49,5 @@ suite = suite.addBatch
 
     'it should be the same as the original': (topic) ->
       assert.equal topic, teststring
-
-  'When using a streaming hash':
-    topic: ->
-      base32.sha1()
-
-    'it should calculate the right digest': (hash) ->
-      hash.update(teststring.substr(0,10))
-      hash.update(teststring.substr(10))
-      assert.equal hash.digest(), '1wwn60g9bv8n5g8n72udmk7yqm80dvtu'
-
-  'When we hash a file':
-    topic: ->
-      base32.sha1.file('LICENSE', this.callback)
-
-    'it should give the right value': (hash) ->
-      assert.equal hash, 'za118kbdknm728mwx9r5g9rtv3mw2y4d'
 
 suite.run()
