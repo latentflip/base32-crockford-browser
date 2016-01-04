@@ -1,12 +1,12 @@
 {
-  "name": "base32",
+  "name": "base32-browser",
   "description": "Base32 encoding and decoding",
-  "version": "0.0.6",
-  "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)",
-  "homepage": "https://github.com/agnoster/base32-js",
+  "version": "1.0.0",
+  "author": "Typeform - Victor Bjelkholm <victor@typeform.com>",
+  "homepage": "https://github.com/VictorBjelkholm/base32-js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/agnoster/base32-js.git"
+    "url": "git://github.com/VictorBjelkholm/base32-js.git"
   },
   "main": "./lib/base32",
   "bin": "./bin/base32.js",
