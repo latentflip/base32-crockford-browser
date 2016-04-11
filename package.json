@@ -1,12 +1,12 @@
 {
-  "name": "base32-browser",
-  "description": "Base32 encoding and decoding",
+  "name": "base32-crockford-browser",
+  "description": "Base32 (crockford variant) encoding and decoding for the browser",
   "version": "1.0.0",
-  "author": "Typeform - Victor Bjelkholm <victor@typeform.com>",
-  "homepage": "https://github.com/VictorBjelkholm/base32-js",
+  "author": "Philip Roberts",
+  "homepage": "https://github.com/latentflip/base32-crockford-browser",
   "repository": {
     "type": "git",
-    "url": "git://github.com/VictorBjelkholm/base32-js.git"
+    "url": "git://github.com/latentflip/base32-crockford-browser.git"
   },
   "main": "./lib/base32",
   "bin": "./bin/base32.js",
@@ -21,9 +21,6 @@
   },
   "devDependencies": {
     "coffee-script": ">=1.0.0",
-    "gulp": "^3.8.11",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.1.0",
     "vows": ">=0.5.6"
   }
 }
